@@ -1,0 +1,87 @@
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(to right, #d0e5ff, #e6f0ff);
+  padding: 40px 20px;
+}
+
+.cart-box {
+  background-color: white;
+  border-radius: 16px;
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 1s ease;
+}
+
+.cart-box h2 {
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #eff6ff;
+  color: #1e3a8a;
+}
+
+.total-label {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.total-amount {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.pay-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #1e40af;
+}
+.delete-icon {
+  color: red;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.delete-icon:hover {
+  transform: scale(1.2);
+}

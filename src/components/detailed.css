@@ -1,0 +1,176 @@
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(to right, #d0e5ff, #e6f0ff);
+  animation: fadeIn 1s ease;
+  padding: 40px 20px;
+}
+
+.detail-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  
+}
+
+.detail-image {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  flex-shrink: 0;
+}
+
+.detail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  margin-left: 40px;
+}
+
+.detail-info h1 {
+  color: #1e3a8a;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 20px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.stock {
+  font-size: 16px;
+  color: #334155;
+}
+
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.qty-control button {
+  width: 36px;
+  height: 33px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #dbeafe;
+  color: #1e3a8a;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.qty-control button:hover {
+  background-color: #bfdbfe;
+}
+
+.qty-control span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #334155;
+  width: 40px;
+  text-align: center;
+}
+
+
+.cart-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: fit-content;
+}
+
+.cart-btn:hover {
+  background-color: #1e40af;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .detail-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detail-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .detail-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .actions {
+    align-items: center;
+  }
+}
+.btn-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.buy-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #059669;
+}
+
