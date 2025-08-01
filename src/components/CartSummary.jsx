@@ -23,7 +23,7 @@ const CartSummary = () => {
   const handlePostPayment = async () => {
     try {
       const message = generateCartMessage();
-      await axios.post('http://localhost:5001/send-whatsapp', { message });
+      await axios.post('https://ecomme-backend-production.up.railway.app/send-whatsapp', { message });
       setWhatsappStatus('✅ Message sent!');
     } catch (err) {
       console.error("WhatsApp Error:", err);
